@@ -1,4 +1,4 @@
-class Solution:
+class Solution: #Time : O(n), Space : 0(n)
     def isPalindrome(self, s: str) -> bool:
         filtered_s =""
         for i in s:
