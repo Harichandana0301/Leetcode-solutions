@@ -1,4 +1,4 @@
-class Solution:
+class Solution: # Time: O(n) Space: O(1)
     def isPalindrome(self, s: str) -> bool:
         l = 0
         r = len(s)-1
