@@ -1,4 +1,4 @@
-class Solution:
+class Solution: #Time:O(n) Space:O(n)
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap={}
         for idx, val in enumerate(nums):
