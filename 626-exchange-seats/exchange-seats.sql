@@ -1,5 +1,4 @@
 /* Write your T-SQL query statement below */
-select case when id%2 = 1 then lead(id,1, id) over(order by id) 
-            else lag(id)over(order by id)  end as id,student
+select id, case when id%2 = 0 then (lag(student) over(order by id))
+else coalesce((lead(student) over(order by id)),student) end as student
 from seat
-order by id
