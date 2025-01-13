@@ -1,4 +1,5 @@
 /* Write your T-SQL query statement below */
+
 with cte as (
     select employee_id, count(department_id) as cnt_dept
     from employee
