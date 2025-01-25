@@ -1,10 +1,6 @@
 /* Write your T-SQL query statement below */
-SELECT
-e.name, b.bonus
-FROM 
-employee e
-LEFT JOIN
-Bonus b
-ON
-e.empid = b.empid
-where isnull(b.bonus,0) < 1000 
+select
+e.name, b.bonus 
+from employee e
+left join bonus b  on 
+e.empid = b.empid where b.bonus < 1000 OR bonus IS NULL;
