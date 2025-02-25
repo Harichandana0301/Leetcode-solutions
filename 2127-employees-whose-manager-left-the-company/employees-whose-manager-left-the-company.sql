@@ -1,7 +1,7 @@
 /* Write your T-SQL query statement below */
 select employee_id
 from Employees 
-where salary < 30000 and manager_id NOT in
- ( select  employee_id
-from Employees )
-order by employee_id
+where Salary < 30000 and manager_id NOT in
+ (select  Employee_id
+from Employees)
+Order by employee_id
